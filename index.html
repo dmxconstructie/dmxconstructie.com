@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DMX Constructie</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #0a2540;
+    }
+    .flex-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .flex-item {
+      flex: 1;
+      min-width: 280px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: "✔ ";
+      color: #0a2540;
+    }
+    a.button {
+      display: inline-block;
+      background-color: #0a2540;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    form {
+      display: grid;
+      gap: 15px;
+    }
+    input, textarea, button {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    button[type="submit"] {
+      background-color: #0a2540;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="container">
+      <h1>DMX Constructie</h1>
+      <p style="font-size: 1.2rem; max-width: 800px;">
+        Kwaliteit in staal, bouw en maatwerkconstructies. Wij bouwen stevig, duurzaam en professioneel. Voor particulieren, bedrijven en overheden.
+      </p>
+      <div class="flex-section" style="margin-top: 40px;">
+        <div class="flex-item">
+          <h2>Onze diensten</h2>
+          <ul>
+            <li>Staalconstructies</li>
+            <li>Renovatie & verbouw</li>
+            <li>Montage op locatie</li>
+            <li>Onderhoud & service</li>
+          </ul>
+        </div>
+        <div class="flex-item">
+          <h2>Offerte aanvragen</h2>
+          <p>Vertel ons wat je nodig hebt. Binnen 48 uur krijg je een vrijblijvende offerte.</p>
+          <a href="#offerte" class="button">Vraag offerte aan</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="offerte" style="background-color: #fff;">
+    <div class="container">
+      <h2>Offerte aanvragen</h2>
+      <form action="#" method="post">
+        <input type="text" name="naam" placeholder="Naam" required>
+        <input type="email" name="email" placeholder="E-mailadres" required>
+        <input type="tel" name="telefoon" placeholder="Telefoonnummer">
+        <textarea name="bericht" placeholder="Wat kunnen wij voor u bouwen?" rows="5" required></textarea>
+        <button type="submit">Verstuur aanvraag</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
